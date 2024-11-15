@@ -1,5 +1,8 @@
 [tool.pytest.ini_options]
 pythonpath = "partcad/src"
+filterwarnings = [
+    "ignore:.*is a deprecated alias for.*:DeprecationWarning"
+]
 
 [tool.black]
 line-length = 80

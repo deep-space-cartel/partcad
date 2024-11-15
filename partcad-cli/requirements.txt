@@ -1,3 +1,5 @@
+# coloredlogs
+# rich_click
 aiofiles==24.1.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:22a075c9e5a3810f0c2e48f3008c94d68c65d763b9b03857924c99e57355166c \
     --hash=sha256:b4ec55f4195e3eb5d7abd1bf7e061763e864dd4954231fb8539a0ef8bb8260e5
@@ -1284,7 +1286,7 @@ packaging==23.2 ; python_version >= "3.10" and python_version < "4.0" \
 parso==0.8.4 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:a418670a20291dacd2dddc80c377c5c3791378ee1e8d12bffc35420643d43f18 \
     --hash=sha256:eb3a7b58240fb99099a345571deecc0f9540ea5f4dd2fe14c2a99d6b281ab92d
-partcad @ file:///workspaces/partcad/partcad ; python_version >= "3.10" and python_version < "4.0"
+# partcad @ file:///workspaces/partcad/partcad ; python_version >= "3.10" and python_version < "4.0"
 path==17.0.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:b7309739c569e30110a34c6c812e582c09ff504c43e1232817410181838918ed \
     --hash=sha256:e1540261d22df1416fb1b498b3b1ed5353a371a48fe197d66611bb01e7fab2d5

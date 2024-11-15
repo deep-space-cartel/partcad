@@ -8,10 +8,10 @@ keywords = ["cadquery", "build123d", "cad", "design", "openscad", "step", "stl"]
 requires-python = ">=3.10"
 license = {file = "LICENSE.txt"}
 authors = [
-  {name = "Roman Kuzmenko", email = "openvmp@proton.me" }
+  {name = "Roman Kuzmenko", email = "support@partcad.org" }
 ]
 maintainers = [
-  {name = "Roman Kuzmenko", email = "openvmp@proton.me" }
+  {name = "Roman Kuzmenko", email = "support@partcad.org" }
 ]
 dynamic = ["dependencies"]
 
@@ -36,7 +36,7 @@ Issues = "https://github.com/openvmp/partcad/issues"
 name = "partcad"
 version = "0.7.16"
 description = "Package manager for CAD models and a modelling framework"
-authors = ["Roman Kuzmenko <openvmp@proton.me>"]
+authors = ["Roman Kuzmenko <support@partcad.org>"]
 license = "Apache"
 readme = "README.md"
 
@@ -60,6 +60,9 @@ google-generativeai = "^0.8.3"
 pillow = "^11.0.0"
 openai = "^1.54.3"
 ollama = "^0.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]
