@@ -1,7 +1,6 @@
 -r ./docs/requirements.txt # --requirement
 -r ./partcad/requirements.txt # --requirement
 -r ./partcad-cli/requirements.txt # --requirement
-# conda
 black
 flake8
 isort

@@ -31,6 +31,9 @@
     // export PATH="/home/vscode/miniconda3/bin:$PATH"
     "PATH": ".venv/bin:/home/vscode/miniconda3/bin:${containerEnv:PATH}:/opt/pip/bin"
   },
+  "postCreateCommand": {
+    "Install poetry-multiproject-plugin": "poetry self add poetry-multiproject-plugin" // sudo /opt/pip/bin/
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.

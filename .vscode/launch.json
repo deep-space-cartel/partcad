@@ -1,0 +1,44 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Module",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "poetry"
+    },
+    {
+      "name": "Debug 'partcad status'",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "partcad-cli/src/partcad_cli/click/command.py",
+      "args": [
+        "status"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "env": {
+        "PYTHONPATH": "${env:PATH}"
+      }
+    },
+    {
+      "name": "Debug 'partcad init'",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "partcad-cli/src/partcad_cli/click/command.py",
+      "args": [
+        "init"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "env": {
+        "PYTHONPATH": "${env:PATH}"
+      }
+    }
+  ]
+}

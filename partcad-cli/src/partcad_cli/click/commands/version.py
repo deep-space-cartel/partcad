@@ -5,7 +5,7 @@ import rich_click as click  # import click
 
 
 @click.command(
-    help="Print PartCAD & PartCAD CLI versions and exit"
+    help="* Print PartCAD & PartCAD CLI versions and exit"
 )  # @cli, not @click!
 def cli():
     logging.info("PartCAD version: %s" % pc.__version__)
