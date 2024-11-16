@@ -38,7 +38,7 @@ name = "partcad-dev"
 version = "0.1.0"
 description = "Development Environment for PartCAD"
 authors = [
-  "Roman Kuzmenko <support@partcad.org>", 
+  "Roman Kuzmenko <support@partcad.org>",
   "Alexander Ilyin <alexander@ilyin.eu>"
 ]
 license = "Apache 2.0"

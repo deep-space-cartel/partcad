@@ -1,6 +1,6 @@
 # %%
 
-# The markers "# %%" separate code blocks for execution (cells) 
+# The markers "# %%" separate code blocks for execution (cells)
 # Press shift-enter to exectute a cell and move to next cell
 # Press ctrl-enter to exectute a cell and keep cursor at the position
 # For more details, see https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
@@ -28,4 +28,3 @@ b2 = fillet(b2.edges(), 0.1)
 show(b2, axes=True, axes0=True, grid=(True, True, True), transparent=True)
 
 # %%
-

@@ -17,9 +17,11 @@
       // openscad-> `pc inspect :test`
       // partcad -> pypy3 pypy3-dev
       // graphviz -> gprof2dot
-      "packages": "shellcheck bash-completion cmake libcairo2-dev pkg-config python3-dev ffmpeg libsm6 libxext6 openscad pypy3 pypy3-dev graphviz" // shfmt
+      // pipx -> poetry-plugin-export
+      "packages": "shellcheck bash-completion cmake libcairo2-dev pkg-config python3-dev ffmpeg libsm6 libxext6 openscad pypy3 pypy3-dev graphviz pipx" // shfmt
     },
     "ghcr.io/deep-space-cartel/devcontainers-features/pip:1": {
+      // TODO: Move poetry installation to pipx
       "packages": "pre-commit poetry",
       "location": "/opt/pip"
     },

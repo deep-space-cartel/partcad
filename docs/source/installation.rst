@@ -22,13 +22,13 @@ getting tested on Linux, MacOS and Windows.
 
   Default Windows Python could not compile some of the PartCAD dependencies.
 
-  If Partcad does not see ``conda`` then he does not 
+  If Partcad does not see ``conda`` then he does not
 
 
 FAQ
 
 1. Why PArt cat contaminates my current python env?
- 
+
  - Please install Conda so we can use it for sandboxing and keep your env clean.
 
  if you are experiencing installing partcad on mac os consider using mamba.

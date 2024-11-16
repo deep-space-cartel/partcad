@@ -50,7 +50,7 @@ You can use ``cProfile`` & ``snakeviz`` to profile CLI application, for example:
 .. code-block:: bash
 
   python -m cProfile -o pc-version.prof $(command -v pc) version
-  snakeviz pc-version.prof 
+  snakeviz pc-version.prof
 
 yappi
 -----
