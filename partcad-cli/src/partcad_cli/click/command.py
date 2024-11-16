@@ -3,6 +3,8 @@ import rich_click as click
 import os
 import partcad as pc
 import coloredlogs, logging
+from partcad.logging_ansi_terminal import init as logging_ansi_terminal_init
+from partcad.globals import init
 
 plugin_folder = os.path.join(os.path.dirname(__file__), "commands")
 
@@ -75,7 +77,7 @@ def cli(ctx, v, q, no_ansi, p):
             # fmt="%(pathname)s:%(lineno)d - %(message)s",
         )
 
-        pc.logging_ansi_terminal_init()
+        logging_ansi_terminal_init()
 
     if q:
         pc.logging.setLevel(logging.CRITICAL + 1)
@@ -85,10 +87,11 @@ def cli(ctx, v, q, no_ansi, p):
         else:
             pc.logging.setLevel(logging.INFO)
 
+    # TODO: @alexanderilyin: Only initialize Context for commands where it's used
     if p is None:
-        ctx.obj = pc.init()
+        ctx.obj = init()
     else:
-        ctx.obj = pc.init(p)
+        ctx.obj = init(p)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
-import rich_click as click  # import click
-from partcad import Context
+import rich_click as click
+from partcad.context import Context
 from partcad.user_config import user_config
 
 

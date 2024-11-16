@@ -121,7 +121,7 @@
         "editor.formatOnType": true,
         "editor.autoIndent": "full",
         "editor.rulers": [
-          80
+          120
         ],
         "files.exclude": {
           ".git/**": true,
