@@ -12,3 +12,4 @@ __pycache__
 /partcad-cli/dist
 .ocp_vscode
 docs/build
+*.prof

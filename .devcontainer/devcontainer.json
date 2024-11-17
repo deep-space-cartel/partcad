@@ -18,7 +18,8 @@
       // partcad -> pypy3 pypy3-dev
       // graphviz -> gprof2dot
       // pipx -> poetry-plugin-export
-      "packages": "shellcheck bash-completion cmake libcairo2-dev pkg-config python3-dev ffmpeg libsm6 libxext6 openscad pypy3 pypy3-dev graphviz pipx" // shfmt
+      // time, moreutils -> potato debugging
+      "packages": "shellcheck bash-completion cmake libcairo2-dev pkg-config python3-dev ffmpeg libsm6 libxext6 openscad pypy3 pypy3-dev graphviz pipx time" // shfmt
     },
     "ghcr.io/deep-space-cartel/devcontainers-features/pip:1": {
       // TODO: Move poetry installation to pipx
@@ -197,13 +198,14 @@
         "jock.svg",
         "swyddfa.esbonio",
         "Codeium.codeium",
-        "CucumberOpen.cucumber-official",
         "ms-azuretools.vscode-docker",
         "hediet.debug-visualizer",
         "bbenoist.vagrant",
         "ryanluker.vscode-coverage-gutters",
         "ms-python.python",
-        "chintans98.markdown-jira"
+        "chintans98.markdown-jira",
+        "streetsidesoftware.code-spell-checker",
+        "alexkrechik.cucumberautocomplete"
       ]
     }
   }
