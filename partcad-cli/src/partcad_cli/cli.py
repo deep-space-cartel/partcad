@@ -121,9 +121,9 @@ def main():
         elif args.command == "status":
             cli_status(args)
             return
-        # elif args.command == "version":
-        #     pc_logging.info("PartCAD version: %s" % pc.__version__)
-        #     return
+        elif args.command == "version":
+            pc_logging.info("PartCAD version: %s" % pc.__version__)
+            return
 
         if args.command == "install" or args.command == "update":
             user_config.force_update = True
