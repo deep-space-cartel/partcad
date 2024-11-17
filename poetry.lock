@@ -145,6 +145,51 @@ files = [
 ]
 
 [[package]]
+name = "allure-behave"
+version = "2.13.5"
+description = "Allure behave integration"
+optional = false
+python-versions = "*"
+files = [
+    {file = "allure-behave-2.13.5.tar.gz", hash = "sha256:338ca2cc7395d1ee3dd72f5d7d92d8920f1ade0e07ddebc637b38e61e06dc8dc"},
+    {file = "allure_behave-2.13.5-py3-none-any.whl", hash = "sha256:8b04291f435af536b46c3cbd20d33e61b27f5e25dd2fff2fdc1dc3fa2474e23e"},
+]
+
+[package.dependencies]
+allure-python-commons = "2.13.5"
+behave = ">=1.2.5"
+
+[[package]]
+name = "allure-pytest"
+version = "2.13.5"
+description = "Allure pytest integration"
+optional = false
+python-versions = "*"
+files = [
+    {file = "allure-pytest-2.13.5.tar.gz", hash = "sha256:0ef8e1790c44a988db6b83c4d4f5e91451e2c4c8ea10601dfa88528d23afcf6e"},
+    {file = "allure_pytest-2.13.5-py3-none-any.whl", hash = "sha256:94130bac32964b78058e62cf4b815ad97a5ac82a065e6dd2d43abac2be7640fc"},
+]
+
+[package.dependencies]
+allure-python-commons = "2.13.5"
+pytest = ">=4.5.0"
+
+[[package]]
+name = "allure-python-commons"
+version = "2.13.5"
+description = "('Contains the API for end users as well as helper functions and classes to build Allure adapters for Python test frameworks',)"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "allure-python-commons-2.13.5.tar.gz", hash = "sha256:a232e7955811f988e49a4c1dd6c16cce7e9b81d0ea0422b1e5654d3254e2caf3"},
+    {file = "allure_python_commons-2.13.5-py3-none-any.whl", hash = "sha256:8b0e837b6e32d810adec563f49e1d04127a5b6770e0232065b7cb09b9953980d"},
+]
+
+[package.dependencies]
+attrs = ">=16.0.0"
+pluggy = ">=0.4.0"
+
+[[package]]
 name = "annotated-types"
 version = "0.7.0"
 description = "Reusable constraint types to use with typing.Annotated"
@@ -270,6 +315,43 @@ six = ">=1.11"
 [package.extras]
 develop = ["coverage", "invoke (>=0.21.0)", "modernize (>=0.5)", "path.py (>=8.1.2)", "pathlib", "pycmd", "pylint", "pytest (>=3.0)", "pytest-cov", "tox"]
 docs = ["sphinx (>=1.6)", "sphinx-bootstrap-theme (>=0.6)"]
+
+[[package]]
+name = "behavex"
+version = "4.0.8"
+description = "Agile testing framework on top of Behave (BDD)."
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "behavex-4.0.8.tar.gz", hash = "sha256:ea11c8575f8e6cfd2e3d863d8bcded9ee940c0e29842661b80fcfb2c81644f67"},
+]
+
+[package.dependencies]
+behave = "1.2.6"
+behavex-images = "*"
+configobj = "*"
+csscompressor = "*"
+htmlmin = "*"
+jinja2 = "*"
+
+[package.extras]
+dev = ["black", "flake8", "pytest", "pytest-cov"]
+
+[[package]]
+name = "behavex-images"
+version = "3.0.7"
+description = "BehaveX extension library to attach images to the test execution report."
+optional = false
+python-versions = "*"
+files = [
+    {file = "behavex_images-3.0.7.tar.gz", hash = "sha256:65312bd1f486987842fef8182750b0f59d0b143b6f4b1d96ce1905f9cd908867"},
+]
+
+[package.dependencies]
+behave = "*"
+behavex = "*"
+numpy = "*"
+pillow = "*"
 
 [[package]]
 name = "black"
@@ -762,6 +844,16 @@ traitlets = ">=4"
 test = ["pytest"]
 
 [[package]]
+name = "configobj"
+version = "5.0.9"
+description = "Config file reading, writing and validation."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "configobj-5.0.9.tar.gz", hash = "sha256:03c881bbf23aa07bccf1b837005975993c4ab4427ba57f959afdd9d1a2386848"},
+]
+
+[[package]]
 name = "coverage"
 version = "7.6.7"
 description = "Code coverage measurement for Python"
@@ -834,6 +926,16 @@ files = [
 
 [package.extras]
 toml = ["tomli"]
+
+[[package]]
+name = "csscompressor"
+version = "0.9.5"
+description = "A python port of YUI CSS Compressor"
+optional = false
+python-versions = "*"
+files = [
+    {file = "csscompressor-0.9.5.tar.gz", hash = "sha256:afa22badbcf3120a4f392e4d22f9fff485c044a1feda4a950ecc5eba9dd31a05"},
+]
 
 [[package]]
 name = "cssselect2"
@@ -921,6 +1023,20 @@ files = [
     {file = "docutils-0.21.2-py3-none-any.whl", hash = "sha256:dafca5b9e384f0e419294eb4d2ff9fa826435bf15f15b7bd45723e8ad76811b2"},
     {file = "docutils-0.21.2.tar.gz", hash = "sha256:3a6b18732edf182daa3cd12775bbb338cf5691468f91eeeb109deff6ebfa986f"},
 ]
+
+[[package]]
+name = "execnet"
+version = "2.1.1"
+description = "execnet: rapid multi-Python deployment"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "execnet-2.1.1-py3-none-any.whl", hash = "sha256:26dee51f1b80cebd6d0ca8e74dd8745419761d3bef34163928cbebbdc4749fdc"},
+    {file = "execnet-2.1.1.tar.gz", hash = "sha256:5189b52c6121c24feae288166ab41b32549c7e2348652736540b9e6e7d4e72e3"},
+]
+
+[package.extras]
+testing = ["hatch", "pre-commit", "pytest", "tox"]
 
 [[package]]
 name = "executing"
@@ -1552,6 +1668,16 @@ python-versions = ">=3.7"
 files = [
     {file = "h11-0.14.0-py3-none-any.whl", hash = "sha256:e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761"},
     {file = "h11-0.14.0.tar.gz", hash = "sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d"},
+]
+
+[[package]]
+name = "htmlmin"
+version = "0.1.12"
+description = "An HTML Minifier"
+optional = false
+python-versions = "*"
+files = [
+    {file = "htmlmin-0.1.12.tar.gz", hash = "sha256:50c1ef4630374a5d723900096a961cff426dff46b48f34d194a81bbe14eca178"},
 ]
 
 [[package]]
@@ -3391,6 +3517,26 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "virtualenv"]
 
 [[package]]
+name = "pytest-xdist"
+version = "3.6.1"
+description = "pytest xdist plugin for distributed testing, most importantly across multiple CPUs"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pytest_xdist-3.6.1-py3-none-any.whl", hash = "sha256:9ed4adfb68a016610848639bb7e02c9352d5d9f03d04809919e2dafc3be4cca7"},
+    {file = "pytest_xdist-3.6.1.tar.gz", hash = "sha256:ead156a4db231eec769737f57668ef58a2084a34b2e55c4a8fa20d861107300d"},
+]
+
+[package.dependencies]
+execnet = ">=2.1"
+pytest = ">=7.0.0"
+
+[package.extras]
+psutil = ["psutil (>=3.0)"]
+setproctitle = ["setproctitle"]
+testing = ["filelock"]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -4674,4 +4820,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "655b38413779a38d2f6096cdb5117082485078b2b4319dffd7b3fe107794a081"
+content-hash = "737ee4dff9770ecba79cab5c67de767d5ca0bf1ad9451c9cb14c82ec49e5cc01"

@@ -206,6 +206,7 @@
         "chintans98.markdown-jira",
         "streetsidesoftware.code-spell-checker",
         "alexkrechik.cucumberautocomplete"
+        // "YouneselBarnoussi.vscode-behave-test-adapter"
       ]
     }
   }

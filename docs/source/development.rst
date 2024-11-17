@@ -38,6 +38,27 @@ Testing
 * https://download.virtualbox.org/virtualbox/7.0.22/VirtualBox-7.0.22-165102-Win.exe
 * https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
 
+* https://allurereport.org/
+* https://pytest-cov.readthedocs.io/
+* https://github.com/hrcorval/behavex
+
+.. code-block:: bash
+
+   behavex
+
+   pytest -n auto
+
+   curl -OLJ https://github.com/allure-framework/allure2/releases/download/2.32.0/allure_2.32.0-1_all.deb
+   sudo dpkg -i  allure_2.32.0-1_all.deb 
+   sudo apt install default-jre-headless
+   sudo apt --fix-broken install
+
+   pytest --alluredir=.allure
+   allure serve .allure
+
+   pytest --cov=partcad
+
+
 =========
 Profiling
 =========
